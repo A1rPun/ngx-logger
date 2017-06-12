@@ -1,6 +1,6 @@
-import { ModuleWithProviders, NgModule } from '@angular/core';
 import { ILoggerConfig } from './logger.config.interface';
 import { Logger } from './logger';
+import { ModuleWithProviders, NgModule } from '@angular/core';
 
 @NgModule({
   providers: [

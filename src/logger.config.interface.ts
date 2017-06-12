@@ -1,6 +1,7 @@
 import { LogLevel } from '.';
 
 export interface ILoggerConfig {
-  minimumLevel?: LogLevel | number;
   fields?: {};
+  logSize?: number;
+  minimumLevel?: LogLevel | number;
 }
