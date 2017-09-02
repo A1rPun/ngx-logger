@@ -68,11 +68,6 @@ One can call `logTo` to get all logged messages and output the stream to the sin
         this.http.post(url, logMessage);
       }
 
-      // Log last message to local storage
-      logToConsole(logMessage: any): void {
-        console.log(`[${logMessage.timestamp}] ${logMessage.level} > ${logMessage.message}`);
-      }
-
       // Just log to the trusty console
       logToConsole(logMessage: any): void {
         console.log(`[${logMessage.timestamp}] ${logMessage.level} > ${logMessage.message}`);
@@ -102,7 +97,13 @@ On other environments it will output this message to the console:
 
 ## API
 
+#### logger.error()
+#### logger.warn()
+#### logger.info()
+#### logger.debug()
 
+#### logger.logTo()
+#### logger.setField()
 
 ## Log levels
 #### LogLevel.off = 0

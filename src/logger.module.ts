@@ -8,12 +8,12 @@ import { ModuleWithProviders, NgModule } from '@angular/core';
   ],
 })
 export class LoggerModule {
-    static withConfig(userConfig: ILoggerConfig = {}): ModuleWithProviders {
-        return {
-            ngModule: LoggerModule,
-            providers: [
-                { provide: 'LOGGER_CONFIG', useValue: userConfig }
-            ]
-        };
-    }
+  static withConfig(userConfig: ILoggerConfig = {}): ModuleWithProviders {
+    return {
+      ngModule: LoggerModule,
+      providers: [
+        { provide: 'LOGGER_CONFIG', useValue: userConfig }
+      ],
+    };
+  }
 }
